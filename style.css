@@ -1,5 +1,10 @@
 .header img {
     width: 100%;
+    max-height: 500px;
+}
+
+h1 {
+    text-transform: uppercase;
 }
 
 h1, h2 {
@@ -42,6 +47,7 @@ ul a {
     margin-top: -4px;
     text-align: center;
     line-height: 50px;
+    font-size: 15px;
 }
 .navbar ul li:hover {
     background: #ECC133;
@@ -70,21 +76,105 @@ ul a {
     padding-bottom: 20px;
 }
 
+.main {
+    padding: 20px;
+}
+
+.kuulutused a {
+    text-decoration: none;
+}
+
+.kuulutused a:hover {
+    text-decoration:underline;
+}
+
+.loomad {
+    width: 90%;
+}
+
+.loomad img {
+    float: right;
+    margin-top: -100px;
+}
+
+.toetajad {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.varjupaigast {
+    width: 70%
+}
+
 .footer {
     background: #888888;
     text-align: right;
-    padding-right: 40px;
+    padding: 10px 40px 10px 0;
 }
 
 .footer p {
     margin: 0;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 901px) {
+@media only screen and (min-width: 600px) and (max-width: 846px) {
     .navbar ul li {
         line-height: 25px;
     }
     h1, h2 {
+        text-align: center;
+    }
+    .toetajad a img {
+        height: 200px;
+    }
+    .loomad img {
+        margin-top: -50px;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 599px) {
+    .navbar ul li {
+        line-height: 25px;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    .toetajad a img {
+        height: 200px;
+    }
+    .loomad img {
+        margin-top: -50px;
+    }
+    .map {
+        width: 100%;
+        height: 400px;
+    }
+    .loom {
+        width: 97%;
+    }
+    .loom p {
+        font-size: 2em;
+    }
+    .loomad img {
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .loomad p {
+        text-align: center;
+        font-size: 2em;
+    }
+    .toetajad {
+        display: block;
+    }
+    .toetajad a img {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .varjupaigast {
+        width: 100%;
         text-align: center;
     }
 }
