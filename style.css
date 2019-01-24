@@ -8,12 +8,12 @@ h1 {
 }
 
 h1, h2 {
-    color: #E9DC68;
+    color: #FFFF66;
 }
 
 .main p {
-    color:darkred;
-    font-size: 20px;
+    color:#221100;
+    font-size: 25px;
 }
 
 h1 {
@@ -57,14 +57,30 @@ ul a {
     background-image: url(GjscCgG.jpg);
 }
 
-.pics {
-    display:inline-block;
+.custom-select {
+    float: right;
+    padding-top: 50px;
+    padding-right: 300px;
+}
+
+.custom-select select {
+    font-size: 30px;
+}
+
+.pics::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .loom {
-  float: left;
-  width: 30%;
-  padding: 0 15px;
+    float:left;
+    width: 30%;
+    padding: 15px;
+}
+
+#kass1, #koer1 {
+    padding-bottom: 0;
 }
 
 .loom p {
@@ -104,6 +120,13 @@ ul a {
     padding-right: 5%;
 }
 
+.toetajad img {
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 300px;
+}
+
 .varjupaigast {
     width: 70%
 }
@@ -118,7 +141,7 @@ ul a {
     margin: 0;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 846px) {
+@media only screen and (min-width: 700px) and (max-width: 846px) {
     .navbar ul li {
         line-height: 25px;
     }
@@ -131,9 +154,26 @@ ul a {
     .loomad img {
         margin-top: -50px;
     }
+    .pics::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .loom {
+        float:left;
+        width: 45%;
+        padding: 15px;
+    }
+    .toetajad {
+        display:block;
+    }
+    .toetajad img {
+        height: auto;
+        width: auto;
+    }
 }
 
-@media only screen and (min-width: 100px) and (max-width: 599px) {
+@media only screen and (min-width: 100px) and (max-width: 699px) {
     .navbar ul li {
         line-height: 25px;
     }
@@ -149,6 +189,8 @@ ul a {
     .map {
         width: 100%;
         height: 400px;
+        max-width: 500px;
+        max-height: 450px;
     }
     .loom {
         width: 97%;
@@ -167,6 +209,7 @@ ul a {
     }
     .toetajad {
         display: block;
+        text-align: center;
     }
     .toetajad a img {
         width: 100%;
