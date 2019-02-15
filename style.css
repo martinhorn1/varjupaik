@@ -55,6 +55,7 @@ ul a {
 
 .main {
     background-image: url(textile-2918844_960_720.jpg);
+    padding: 20px;
 }
 
 .custom-select {
@@ -90,10 +91,6 @@ ul a {
 .map {
     margin: auto;
     padding-bottom: 20px;
-}
-
-.main {
-    padding: 20px;
 }
 
 .kuulutused a {
