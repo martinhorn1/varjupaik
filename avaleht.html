@@ -2,13 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Document</title>
     </head>
     <body>
-       
-        <div class="header w3-content w3-section">
-            <img src="img/loomade-varjupaik.jpg">
+
+        <div class="header">
+                <img class="mySlides" src="img/loomade-varjupaik.jpg" style="width:100%">
+                <img class="mySlides" src="img/header2.jpeg" style="width:100%">
+                <img class="mySlides" src="img/header3.jpeg" style="width:100%">
+            </div>
         </div>
 
         <div class="navbar">
@@ -36,4 +40,22 @@
             <p>Tartu</p>
         </div>
     </body>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 5000);
+        }
+    </script>
+
 </html>
