@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <title>Document</title>
     </head>
     <body>
@@ -23,10 +24,12 @@
             <br>
             <h1>Kuulutused</h1>
             <div class="kuulutused">
-                <h2><a href="#">Kadunud koer (22.01.2019)</a></h2>
-                <h2><a href="#">Leitud kass (18.01.2019)</a></h2>
+                <h2>Kadunud koer (22.01.2019)</h2>
+                <p style="font-size: 20px">Leidjal helistada numbrile 55555555</p>
+                <h2>Leitud kass (18.01.2019)</h2>
+                <p style="font-size: 20px">Leidjal helistada numbrile 55555555</p>
                 <div class="form">
-                    <form>
+                    <form style="margin-top: 30px;">
                         <p>Anna meile teada kadunud või leitud loomadest</p>
                         <label for="name" style="padding:10px; font-size: 1.5em;">Nimi</label>
                         <input style="padding: 10px;">
@@ -35,7 +38,7 @@
                         <label for="message" style="font-size: 1.5em;">Sõnum</label>
                         <textarea id="subject" placeholder="Teade kadunud või leitud looma kohta" style="width: 600px; height: 200px; padding: 10px;"></textarea>
                         <br>
-                        <input type="submit" value="Saada" style="padding: 10px 20px 10px 20px; margin-left: 610px;">
+                        <input id="submit" type="submit" value="Saada" style="padding: 10px 20px 10px 20px; margin-left: 610px;">
                     </form>
                 </div>
             </div>
