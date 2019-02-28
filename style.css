@@ -119,8 +119,12 @@ ul a {
     text-decoration: none;
 }
 
-.kuulutused a:hover {
-    text-decoration: underline;
+.kuulutused h2 {
+    padding-bottom: 0;
+}
+
+.kuulutused p {
+    font-size: 20px;
 }
 
 .loomad {
